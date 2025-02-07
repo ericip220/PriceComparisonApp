@@ -1,0 +1,574 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		078480112D5620110031F5E5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07847FF42D5620100031F5E5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 07847FFB2D5620100031F5E5;
+			remoteInfo = PriceComparisonApp;
+		};
+		0784801B2D5620110031F5E5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07847FF42D5620100031F5E5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 07847FFB2D5620100031F5E5;
+			remoteInfo = PriceComparisonApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		07847FFC2D5620100031F5E5 /* PriceComparisonApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PriceComparisonApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		078480102D5620110031F5E5 /* PriceComparisonAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PriceComparisonAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0784801A2D5620110031F5E5 /* PriceComparisonAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PriceComparisonAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		078480222D5620110031F5E5 /* Exceptions for "PriceComparisonApp" folder in "PriceComparisonApp" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 07847FFB2D5620100031F5E5 /* PriceComparisonApp */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		07847FFE2D5620100031F5E5 /* PriceComparisonApp */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				078480222D5620110031F5E5 /* Exceptions for "PriceComparisonApp" folder in "PriceComparisonApp" target */,
+			);
+			path = PriceComparisonApp;
+			sourceTree = "<group>";
+		};
+		078480132D5620110031F5E5 /* PriceComparisonAppTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = PriceComparisonAppTests;
+			sourceTree = "<group>";
+		};
+		0784801D2D5620110031F5E5 /* PriceComparisonAppUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = PriceComparisonAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		07847FF92D5620100031F5E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0784800D2D5620110031F5E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		078480172D5620110031F5E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		07847FF32D5620100031F5E5 = {
+			isa = PBXGroup;
+			children = (
+				07847FFE2D5620100031F5E5 /* PriceComparisonApp */,
+				078480132D5620110031F5E5 /* PriceComparisonAppTests */,
+				0784801D2D5620110031F5E5 /* PriceComparisonAppUITests */,
+				07847FFD2D5620100031F5E5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		07847FFD2D5620100031F5E5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				07847FFC2D5620100031F5E5 /* PriceComparisonApp.app */,
+				078480102D5620110031F5E5 /* PriceComparisonAppTests.xctest */,
+				0784801A2D5620110031F5E5 /* PriceComparisonAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		07847FFB2D5620100031F5E5 /* PriceComparisonApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 078480232D5620110031F5E5 /* Build configuration list for PBXNativeTarget "PriceComparisonApp" */;
+			buildPhases = (
+				07847FF82D5620100031F5E5 /* Sources */,
+				07847FF92D5620100031F5E5 /* Frameworks */,
+				07847FFA2D5620100031F5E5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				07847FFE2D5620100031F5E5 /* PriceComparisonApp */,
+			);
+			name = PriceComparisonApp;
+			packageProductDependencies = (
+			);
+			productName = PriceComparisonApp;
+			productReference = 07847FFC2D5620100031F5E5 /* PriceComparisonApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0784800F2D5620110031F5E5 /* PriceComparisonAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 078480282D5620110031F5E5 /* Build configuration list for PBXNativeTarget "PriceComparisonAppTests" */;
+			buildPhases = (
+				0784800C2D5620110031F5E5 /* Sources */,
+				0784800D2D5620110031F5E5 /* Frameworks */,
+				0784800E2D5620110031F5E5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				078480122D5620110031F5E5 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				078480132D5620110031F5E5 /* PriceComparisonAppTests */,
+			);
+			name = PriceComparisonAppTests;
+			packageProductDependencies = (
+			);
+			productName = PriceComparisonAppTests;
+			productReference = 078480102D5620110031F5E5 /* PriceComparisonAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		078480192D5620110031F5E5 /* PriceComparisonAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0784802B2D5620110031F5E5 /* Build configuration list for PBXNativeTarget "PriceComparisonAppUITests" */;
+			buildPhases = (
+				078480162D5620110031F5E5 /* Sources */,
+				078480172D5620110031F5E5 /* Frameworks */,
+				078480182D5620110031F5E5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0784801C2D5620110031F5E5 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				0784801D2D5620110031F5E5 /* PriceComparisonAppUITests */,
+			);
+			name = PriceComparisonAppUITests;
+			packageProductDependencies = (
+			);
+			productName = PriceComparisonAppUITests;
+			productReference = 0784801A2D5620110031F5E5 /* PriceComparisonAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		07847FF42D5620100031F5E5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					07847FFB2D5620100031F5E5 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					0784800F2D5620110031F5E5 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 07847FFB2D5620100031F5E5;
+					};
+					078480192D5620110031F5E5 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 07847FFB2D5620100031F5E5;
+					};
+				};
+			};
+			buildConfigurationList = 07847FF72D5620100031F5E5 /* Build configuration list for PBXProject "PriceComparisonApp" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 07847FF32D5620100031F5E5;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 07847FFD2D5620100031F5E5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				07847FFB2D5620100031F5E5 /* PriceComparisonApp */,
+				0784800F2D5620110031F5E5 /* PriceComparisonAppTests */,
+				078480192D5620110031F5E5 /* PriceComparisonAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		07847FFA2D5620100031F5E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0784800E2D5620110031F5E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		078480182D5620110031F5E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		07847FF82D5620100031F5E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0784800C2D5620110031F5E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		078480162D5620110031F5E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		078480122D5620110031F5E5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 07847FFB2D5620100031F5E5 /* PriceComparisonApp */;
+			targetProxy = 078480112D5620110031F5E5 /* PBXContainerItemProxy */;
+		};
+		0784801C2D5620110031F5E5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 07847FFB2D5620100031F5E5 /* PriceComparisonApp */;
+			targetProxy = 0784801B2D5620110031F5E5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		078480242D5620110031F5E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PriceComparisonApp/PriceComparisonApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PriceComparisonApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PriceComparisonApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = UK.PriceComparisonApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		078480252D5620110031F5E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PriceComparisonApp/PriceComparisonApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PriceComparisonApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PriceComparisonApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = UK.PriceComparisonApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		078480262D5620110031F5E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		078480272D5620110031F5E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		078480292D5620110031F5E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = UK.PriceComparisonAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PriceComparisonApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PriceComparisonApp";
+			};
+			name = Debug;
+		};
+		0784802A2D5620110031F5E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = UK.PriceComparisonAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PriceComparisonApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PriceComparisonApp";
+			};
+			name = Release;
+		};
+		0784802C2D5620110031F5E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = UK.PriceComparisonAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PriceComparisonApp;
+			};
+			name = Debug;
+		};
+		0784802D2D5620110031F5E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = UK.PriceComparisonAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PriceComparisonApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		07847FF72D5620100031F5E5 /* Build configuration list for PBXProject "PriceComparisonApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				078480262D5620110031F5E5 /* Debug */,
+				078480272D5620110031F5E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		078480232D5620110031F5E5 /* Build configuration list for PBXNativeTarget "PriceComparisonApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				078480242D5620110031F5E5 /* Debug */,
+				078480252D5620110031F5E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		078480282D5620110031F5E5 /* Build configuration list for PBXNativeTarget "PriceComparisonAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				078480292D5620110031F5E5 /* Debug */,
+				0784802A2D5620110031F5E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0784802B2D5620110031F5E5 /* Build configuration list for PBXNativeTarget "PriceComparisonAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0784802C2D5620110031F5E5 /* Debug */,
+				0784802D2D5620110031F5E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 07847FF42D5620100031F5E5 /* Project object */;
+}
