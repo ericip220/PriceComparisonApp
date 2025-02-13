@@ -6,5 +6,9 @@
 	<array>
 		<string>remote-notification</string>
 	</array>
+    <key>NSSpeechRecognitionUsageDescription</key>
+    <string>We need your permission to use speech recognition</string>
+    <key>NSMicrophoneUsageDescription</key>
+    <string>We need your permission to use the microphone</string>
 </dict>
 </plist>
