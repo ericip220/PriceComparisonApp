@@ -1,83 +1,74 @@
-//
-//  HomeView.swift
-//  PriceComparisonApp
-//
-//  Created by Eric IP on 07/02/2025.
-//
-
 import SwiftUI
-
-// Ensure productList is declared at the top level
-let productList = [
-    Product(name: "[8% 回贈] $350 Price 網購禮券 |$2...", brand: "Brand A", prices: ["Store1": 9898.0]),
-    Product(name: "Medicube Age-R Booster Pro 智慧...", brand: "Brand B", prices: ["Store2": 1450.0]),
-    Product(name: "Samsung 三星 B-Series 2.1ch Soun...", brand: "Brand C", prices: ["Store3": 388.0])
-]
-
 
 struct HomeView: View {
     @State private var searchText = ""
-    @State private var filteredProducts: [Product] = productList
+    @State private var filteredProducts: [Product] = []
+    @State private var products: [Product] = [] // Local storage for products
     
     var body: some View {
-        
         NavigationView {
-            ZStack {
-                // Background Image
-                Image("back2")
-                    .resizable()
-                    .scaledToFill()
-                    .edgesIgnoringSafeArea(.all)
+            VStack {
+                // Custom search bar with microphone and magnifying glass icons
+                SearchBar(searchText: $searchText, onSearch: performSearch)
                 
-                VStack(alignment: .center) {
-                    // Custom search bar with microphone and magnifying glass icons
-                    SearchBar(searchText: $searchText, onSearch: performSearch)
-                    
-                    VStack(alignment: .center) {
-                        CategoryIcons()
-                        DealsCarousel()
-                        
-                        // Display filtered products
-                        VStack(alignment: .leading, spacing: 15) {
-                            Text("Search Results")
-                                .font(.headline)
-                                .padding(.leading, 20)
-                            ForEach(filteredProducts, id: \.id) { product in
-                                HStack {
-                                    // Product image
-                                    Image(systemName: "photo") // Replace with actual image name
-                                        .resizable()
-                                        .frame(width: 60, height: 60)
-                                        .padding(.leading, 20)
-                                    // Product details
-                                    VStack(alignment: .leading) {
-                                        Text(product.name)
-                                            .font(.body)
-                                        Text("HK$ \(product.prices.values.first ?? 0.0)")
-                                            .font(.subheadline)
-                                            .foregroundColor(.red)
-                                        Text("Original: HK$ \(product.prices.values.first ?? 0.0)")
-                                            .font(.footnote)
-                                            .strikethrough()
-                                            .foregroundColor(.gray)
-                                    }
-                                    Spacer()
+                List(filteredProducts) { product in
+                    VStack(alignment: .leading) {
+                        HStack {
+                            if let urlString = product.imageUrl, let url = URL(string: urlString) {
+                                AsyncImage(url: url) { image in
+                                    image.resizable()
+                                } placeholder: {
+                                    ProgressView()
                                 }
-                                .padding(.vertical, 10)
+                                .frame(width: 60, height: 60)
+                            } else {
+                                Image(systemName: "photo")
+                                    .resizable()
+                                    .frame(width: 60, height: 60)
+                            }
+                            
+                            VStack(alignment: .leading) {
+                                Text(product.name)
+                                    .font(.headline)
+                                Text("Brand: \(product.brand)")
+                                    .font(.subheadline)
+                            }
+                        }
+                        .padding(.bottom, 5)
+                        
+                        HStack {
+                            ForEach(Array(product.prices.keys), id: \.self) { store in
+                                VStack {
+                                    Text(store)
+                                    Text("HK$ \(product.prices[store] ?? 0.0, specifier: "%.2f")")
+                                        .foregroundColor(.red)
+                                }
+                                .padding(5)
+                                .background(Color.gray.opacity(0.1))
+                                .cornerRadius(8)
                             }
                         }
                     }
+                    .padding()
+                }
+                
+                NavigationLink(destination: UserInputForm(products: $products)) {
+                    Text("Add Product")
+                        .padding()
+                        .background(Color.blue)
+                        .foregroundColor(.white)
+                        .cornerRadius(10)
                 }
             }
+            .navigationTitle("SuperMarket Price")
         }
     }
-
-    // Search function to filter the products based on the search text
+    
     func performSearch() {
         if searchText.isEmpty {
-            filteredProducts = productList
+            filteredProducts = products
         } else {
-            filteredProducts = productList.filter { product in
+            filteredProducts = products.filter { product in
                 product.name.lowercased().contains(searchText.lowercased())
             }
         }

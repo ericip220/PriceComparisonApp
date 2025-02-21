@@ -47,7 +47,7 @@ struct ProductCardView: View {
 
 struct ProductCardView_Previews: PreviewProvider {
     static var previews: some View {
-        ProductCardView(product: Product(name: "Organic Milk", brand: "Brand A", prices: ["Tesco": 1.20, "Sainsbury's": 1.15]))
+        ProductCardView(product: Product(name: "Organic Milk", brand: "Brand A", prices: ["Tesco": 1.20, "Sainsbury's": 1.15], imageUrl: "https://pics.freeicons.io/uploads/icons/png/340631961655107260-64.png"))
     }
 }
 

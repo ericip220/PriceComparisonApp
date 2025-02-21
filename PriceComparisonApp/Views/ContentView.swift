@@ -20,7 +20,7 @@ struct ContentView: View {
             HomeView()
                 .environmentObject(viewModel)
         }
-        
+        //test git connection
     }
 }
 

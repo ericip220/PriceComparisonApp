@@ -72,14 +72,36 @@ struct SearchBar: View {
     
     private func requestAuthorization() {
         SFSpeechRecognizer.requestAuthorization { authStatus in
-            switch authStatus {
-            case .authorized:
-                print("Speech recognition authorized")
-            case .denied, .restricted, .notDetermined:
-                print("Speech recognition not authorized")
-            @unknown default:
-                print("Unknown authorization status")
+            DispatchQueue.main.async {
+                switch authStatus {
+                case .authorized:
+                    print("Speech recognition authorized")
+                case .denied:
+                    print("Speech recognition authorization denied")
+                    // Show an alert to the user
+                    showAlert(title: "Permission Denied", message: "Please enable speech recognition in Settings.")
+                case .restricted:
+                    print("Speech recognition restricted on this device")
+                    // Show an alert to the user
+                    showAlert(title: "Permission Restricted", message: "Speech recognition is restricted on this device.")
+                case .notDetermined:
+                    print("Speech recognition not determined")
+                @unknown default:
+                    print("Unknown authorization status")
+                }
             }
+        }
+    }
+    
+    private func showAlert(title: String, message: String) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        if let keyWindow = UIApplication.shared.connectedScenes
+            .filter({ $0.activationState == .foregroundActive })
+            .compactMap({ $0 as? UIWindowScene })
+            .first?.windows
+            .filter({ $0.isKeyWindow }).first {
+                keyWindow.rootViewController?.present(alert, animated: true, completion: nil)
         }
     }
     
@@ -96,15 +118,16 @@ struct SearchBar: View {
         }
         
         let inputNode = audioEngine.inputNode
-        let recordingFormat = AVAudioFormat(standardFormatWithSampleRate: 44100, channels: 1)
-        
-        inputNode.removeTap(onBus: 0) // Ensure there are no previous taps
+        guard let recordingFormat = AVAudioFormat(standardFormatWithSampleRate: 44100, channels: 1) else {
+            print("Invalid audio format")
+            return
+        }
         
         // Ensure format sample rate and channel count are valid
-        //guard recordingFormat?.sampleRate > 0 && recordingFormat?.channelCount > 0 else {
-            //print("Invalid audio format")
-            //return
-        //}
+        guard recordingFormat.sampleRate > 0 && recordingFormat.channelCount > 0 else {
+            print("Invalid audio format")
+            return
+        }
         
         inputNode.installTap(onBus: 0, bufferSize: 1024, format: recordingFormat) { (buffer, when) in
             recognitionRequest.append(buffer)
